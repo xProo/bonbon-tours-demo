@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonbon Tours</title>
+    <meta name="description" content="Bonbon Tours">
+    <meta name="keywords" content="bonbon tours, toursbonbon, bonbontours, bonbon-tours">
+
+
+
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/bonbon_tours-removebg-preview.png" />
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    
+
+  <!-- START: header -->
+
+  <header role="banner" class="probootstrap-header" id="header">
+    <div class="row">
+      <a href="index.html" class="probootstrap-logo visible-xs"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="70px" alt="logo bonbon tours"></a>
+
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" id="burgerMenu"><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+
+        
+        
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          
+          <ul class="probootstrap-main-nav">
+            <li class="hidden-xs probootstrap-logo-center"><a href="index" id="logoCenter_link"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="98px" alt="logo bonbon tours" ></a></li>
+            <li class="active"><a href="index.html" id="home_link">Home</a></li>
+            <li><a href="about" id="about_link">About</a></li>
+            <li><a href="FAQ" id="rooms_link">Our FAQ</a></li>
+            <li><a href="terms-and-conditions.html" id="reservation_link">Reservation</a></li>
+            
+         
+            <li><a href="privacy-policy" id="blog_link">Blog</a></li>
+            <li ><a href="work-with-us" id="join_us_link">Join Us</a></li>
+            <li><a href="contact" id="contact_link">Contact</a></li>
+         
+            <button id="fr_flag" class="flag-button" onclick="toggleLanguage('fr')">
+              <img src="img/france.png" width="25px" alt="Français" class="flag-icon-img">
+          </button>
+          <button id="es_flag" class="flag-button" onclick="toggleLanguage('es')">
+              <img src="img/espagne.png" width="25px" alt="Espagnol" class="flag-icon-img">
+          </button>
+          <button id="en_flag" class="flag-button" onclick="toggleLanguage('en')">
+              <img src="img/anglais.png" width="25px" alt="Anglais" class="flag-icon-img">
+          </button>
+          
+            
+        </ul>
+        
+          <div class="extra-text visible-xs">
+            <a href="#" class="probootstrap-burger-menu" id="extraBurgerMenu"><i>Menu</i></a>
+            <h5 id="connectWithUs">Connect With Us</h5>
+            <ul class="social-buttons">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook2"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</header>
+
+  <!-- END: header -->
+
+
+ 
+  <section class="probootstrap-slider flexslider">
+    <ul class="slides">
+       <li style="background-image: url(img/eiffel.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  
+                  <h1 class="probootstrap-heading probootstrap-animate" id="explore_eiffel"> </h1></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap" id="eiffel_description"></div>
+                  
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/cemetery.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate" id="explore_lachaise"></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap" id="lachaise_description"></div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/montmartre.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate" id="explore_montmartre" ></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap" id="montmartre_description"></div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/notre-dame.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate" id="explore_notre_dame"></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap" id="notre_dame_description"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li style="background-image: url(img/quartier-latin.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate" id="explore_latin_quarter"></h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap" id="latin_quarter_description"></div>                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+
+  <section class="probootstrap-cta probootstrap-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2 class="probootstrap-cta-heading" id="cta_heading"></h2>
+  
+          <div class="probootstrap-cta-button-wrap">
+            <label for="selectLocation" id="select_location_label"></label>
+            <select id="selectLocation" class="btn btn-primary">
+              <option value="#" disabled selected id="select_default"></option>
+              <option value="#tourEiffel" id="select_eiffel">Tour Eiffel</option>
+              <option value="#pereLachaise" id="select_lachaise">Père Lachaise</option>
+              <option value="#quartierLatin" id="select_latin_quarter">Quartier Latin</option>
+              <option value="#montmartre" id="select_montmartre">Montmartre</option>
+            </select>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+  
+
+  <section class="probootstrap-section">
+    <div class="container">
+      <div class="row mb30">
+        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+          <h2 id="services_heading">Découvrez Nos Services</h2>
+          <p class="lead" id="services_lead">Explorez Paris de manière unique grâce à nos services exceptionnels. Profitez d'une expérience enrichissante et mémorable à travers nos offres exclusives :</p>
+          <p><img src="img/curve.svg" class="svg" alt="image bonbon tour"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/parthenon.png" class="svg" alt="image bonbon tour by ">
+            </div>
+            <div class="text">
+              <h3 id="guided_tours_title">Visites Guidées des Lieux Historiques</h3>
+              <p id="guided_tours_description">Explorez les trésors historiques de Paris avec nos guides experts. Plongez-vous dans l'histoire captivante de la Ville Lumière à travers des visites guidées des endroits emblématiques tels que la Tour Eiffel, le Quartier Latin, le Père Lachaise et bien plus encore.</p>
+              <p><a href="#" class="link-with-icon">En savoir plus <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/theorie.png" class="svg" alt="image bonbon tour by ">
+            </div>
+            <div class="text">
+              <h3 id="detailed_explanations_title">Explications Détaillées des Monuments</h3>
+              <p id="detailed_explanations_description">Apprenez en détail sur les monuments célèbres de Paris. Nos guides expérimentés vous offriront des explications approfondies sur l'architecture, l'histoire et les anecdotes fascinantes qui entourent des sites tels que Notre-Dame et Montmartre.</p>
+              <p><a href="#" class="link-with-icon">En savoir plus <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/expe.png" class="svg" alt="image bonbon tour by ">
+            </div>
+            <div class="text">
+              <h3 id="parisian_experience_title">Expérience Parisienne Assurée</h3>
+              <p id="parisian_experience_description">Immergez-vous dans l'authenticité de Paris avec nos services axés sur une expérience parisienne inoubliable. Découvrez la vie locale, explorez les quartiers pittoresques et goûtez à la délicieuse cuisine parisienne pour une expérience complète.</p>
+              <p><a href="#" class="link-with-icon">En savoir plus <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="probootstrap-section probootstrap-section-dark">
+    <div class="container">
+      <div class="row mb30">
+        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+          <h2 id="unforgettable_destinations_heading">Nos Destinations Inoubliables</h2>
+          <p class="lead" id="unforgettable_destinations_lead">Explorez des endroits uniques et découvrez l'essence de chaque lieu. Laissez-vous emporter par des expériences mémorables, entre histoire, culture et beauté.</p>
+
+          <p><img src="img/curve.svg" class="svg" alt="image bonbon tour"></p>
+        </div>
+      </div>
+      <div class="row probootstrap-gutter10">
+        <div class="col-md-6">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="img/eiffel.jpg" class="image-popup">
+                <img src="img/eiffel.jpg" alt="image bonbon tour by " class="img-responsive">
+              </a>
+              <div class="actions">
+                <!-- <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a> -->
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="#" id="visit_eiffel_tower_main">Visite de la Tour effel</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p id="eiffel_description_main">Icône emblématique de Paris, la Tour Eiffel se dresse avec élégance, offrant des vues inoubliables sur la capitale française.</p>
+              <p><a href="#" class="btn btn-primary">From €34 per adult</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="img/cemetery.jpg" class="image-popup">
+              <img src="img/cemetery.jpg" alt="image bonbon tour by " class="img-responsive">
+              </a>
+              <div class="actions">
+                <!-- <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a> -->
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="#" id="visit_lachaise_main">Visite du Père Lachaise (cimetière)</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p id="lachaise_description_main">Exploration fascinante du Père Lachaise, ce cimetière parisien renferme l'histoire, l'art et la mémoire d'illustres personnalités reposant paisiblement.</p>
+              <p><a href="#" class="btn btn-primary">From €34 per adult</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="img/montmartre.jpg" class="image-popup">
+              <img src="img/montmartre.jpg" alt="image bonbon tour by " class="img-responsive">
+              </a>
+              <div class="actions">
+                <!-- <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a> -->
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="#" id="visit_montmartre_main">Visite de Montmartre</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p id="montmartre_description_main">Découvrez la magie de Montmartre, quartier parisien pittoresque, avec ses ruelles charmantes, son art bohème et ses vues envoûtantes sur la ville.</p>
+              <p><a href="#" class="btn btn-primary">From €34 per adult</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="img/notre-dame.jpg" class="image-popup">
+              <img src="img/notre-dame.jpg" alt="image bonbon tour by " class="img-responsive">
+              </a>
+              <div class="actions">
+                <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a>
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="#" id="visit_notre_dame_main">Visite du Centre de Paris (Notre-Dame)</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p id="notre_dame_description_main">Imprégnez-vous de l'histoire au cœur de Paris avec la visite du Centre, où Notre-Dame évoque la grandeur architecturale et culturelle de la capitale.</p>
+              <p><a href="#" class="btn btn-primary">From €34 per adult</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-md-offset-3">
+          <div class="probootstrap-block-image-text">
+            <figure>
+              <a href="img/quartier-latin.jpg" class="image-popup">
+              <img src="img/quartier-latin.jpg" alt="image bonbon tour by " class="img-responsive">
+              </a>
+              <div class="actions">
+                <!-- <a href="https://vimeo.com/45830194" class="popup-vimeo"><i class="icon-play2"></i></a> -->
+              </div>
+            </figure>
+            <div class="text">
+              <h3><a href="#" id="visit_latin_quarter_main">Visite du Quartier Latin</a></h3>
+              <div class="post-meta">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p id="latin_quarter_description_main">Explorez l'âme intellectuelle et le charme du Quartier Latin, un lieu de culture, d'histoire et de vie étudiante vibrante à Paris.</p>
+              <p><a href="#" class="btn btn-primary">From €34 per adult</a></p>
+            </div>
+          </div>
+        </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- <section class="probootstrap-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 probootstrap-relative">
+                <h3 class="mt0 mb30">Quelques souvenirs...</h3>
+                <ul class="probootstrap-owl-navigation absolute right">
+                    <li><a href="#" class="probootstrap-owl-prev"><i class="icon-chevron-thin-left"></i></a></li>
+                    <li><a href="#" class="probootstrap-owl-next"><i class="icon-chevron-thin-right"></i></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 probootstrap-relative">
+                <div class="owl-carousel owl-carousel-carousel">
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="img/photo1.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="img/photo2.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="img/photo3.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="img/photo1.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="img/photo2.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="probootstrap-room">
+                            <a href="#"><img src="img/photo3.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+  
+
+  <section class="probootstrap-half">
+    <div class="image" style="background-image: url(img/beau.jpg);"></div>
+    <div class="text">
+      <div class="probootstrap-animate fadeInUp probootstrap-animated">
+        <h2 class="mt0">Costumer Reviews </h2>
+        <p><img src="img/curve_white.svg" class="seperator" alt="image bonbon tour"></p>
+        <div class="row">
+          <div class="col-md-6">
+            <p>At Bonbon Tours, we cherish the invaluable feedback from our customers. Your reviews are not just comments; they are the heartbeat of our service. We take immense pride in being guided by your experiences, ensuring each tour is crafted to exceed expectations.</p>
+          </div>
+          <div class="col-md-6">
+            <p>Your satisfaction is our priority, and your reviews are the compass that directs us on the path to excellence. Thank you for making Bonbon Tours a journey shaped by your stories.</p>
+          </div>
+        </div>
+        <!-- <p><a href="about" class="link-with-icon white"> <i class=" icon-chevron-right"></i></a></p> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- START: footer -->
+  <footer role="contentinfo" class="probootstrap-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <p class="mt40"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="110px" alt="image bonbon tour by ">           </p>
+            <ul>
+              <li>24-hour advance refund policy</li>
+              <li>Confirmation before every tour</li>
+              <li>Customer Support 24/7</li>
+            </ul>
+            
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Need Help ? </h3>
+            <ul class="probootstrap-blog-list">
+              <li>
+                <a href="about" id="about_link">
+                  <figure class="probootstrap-image"><img src="img/parispan.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                  <div class="probootstrap-text">
+                    <h4 id="about_title">Discover Bonbon Tours</h4>
+                    <p id="about_description">Explore the wonders of Bonbon Tours</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="FAQ" id="faq_link">
+                  <figure class="probootstrap-image"><img src="img/faq.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                  <div class="probootstrap-text">
+                    <h4 id="faq_title">Find Answers in FAQ</h4>
+                    <p id="faq_description">Explore frequently asked questions</p>
+                  </div>
+                </a>
+                
+              </li>
+              <li>
+                <a href="terms-and-conditions" id="terms_conditions_link">
+                  <figure class="probootstrap-image"><img src="img/conditions.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                  <div class="probootstrap-text">
+                    <h4 id="terms_conditions_title">Understand Our Terms</h4>
+                    <p id="terms_conditions_description">Read our terms and conditions</p>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="privacy-policy" id="privacy_policy_link">
+                  <figure class="probootstrap-image"><img src="img/privacy-policy.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                  <div class="probootstrap-text">
+                    <h4 id="privacy_policy_title">Protect Your Privacy</h4>
+                    <p id="privacy_policy_description">Learn about our privacy policy</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="probootstrap-footer-widget">
+            <h3>Contact Us</h3>
+            <ul class="probootstrap-contact-info">
+              <li><i class="icon-location2"></i> <span>Paris</span></li>
+              <li><i class="icon-mail"></i><span>toursbonbon@gmail.com</span></li>
+              <li><i class="icon-phone2"></i><span>+33 7 48 54 52 54</span></li>
+            </ul>
+
+            <div>
+              <h4>You can also find us on Tripadvisor!</h4>
+              <a href="https://www.tripadvisor.fr/Attraction_Review-g187147-d26360710-Reviews-Bonbon_Tours-Paris_Ile_de_France.html" target="_blank"><img src="img/tripadvisor.png" width="50px" alt="Tripadvisor" class="img-responsive"></a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="row mt40">
+        <div class="col-md-12 text-center">
+          <ul class="probootstrap-footer-social">
+            <li><a href=""><i class="icon-twitter"></i></a></li>
+            <li><a href=""><i class="icon-facebook"></i></a></li>
+            <li><a href=""><i class="icon-instagram2"></i></a></li>
+          </ul>
+          <p>
+            <small>&copy; 2024 <a href="https:///" target="_blank">Bonbon Tours</a>. All Rights Reserved. <br> Designed &amp; Developed by Sohane</small>
+          </p>
+          
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- END: footer -->
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+
+  <script>
+    let currentLanguage = 'en'; // Définissez la langue actuelle, par défaut en français
+  
+    function loadTranslations(language) {
+      fetch('translations.json')
+        .then(response => response.json())
+        .then(data => {
+          document.getElementById('explore_eiffel').innerText = data[language].explore_eiffel;
+          document.getElementById('eiffel_description').innerText = data[language].eiffel_description;
+          document.getElementById('explore_lachaise').innerText = data[language].explore_lachaise;
+          document.getElementById('lachaise_description').innerText = data[language].lachaise_description;
+          document.getElementById('explore_montmartre').innerText = data[language].explore_montmartre;
+          document.getElementById('montmartre_description').innerText = data[language].montmartre_description;
+          document.getElementById('explore_notre_dame').innerText = data[language].explore_notre_dame;
+          document.getElementById('notre_dame_description').innerText = data[language].notre_dame_description;
+          document.getElementById('explore_latin_quarter').innerText = data[language].explore_latin_quarter;
+          document.getElementById('latin_quarter_description').innerText = data[language].latin_quarter_description;
+          document.getElementById('cta_heading').innerHTML = data[language].cta_heading;
+          document.getElementById('select_location_label').innerHTML = data[language].select_location_label;
+          document.getElementById('select_default').innerHTML = data[language].select_default;
+          document.getElementById('select_eiffel').innerHTML = data[language].select_eiffel;
+          document.getElementById('select_lachaise').innerHTML = data[language].select_lachaise;
+          document.getElementById('select_latin_quarter').innerHTML = data[language].select_latin_quarter;
+          document.getElementById('select_montmartre').innerHTML = data[language].select_montmartre;
+          document.getElementById('services_heading').innerHTML = data[language].services_heading;
+        document.getElementById('services_lead').innerHTML = data[language].services_lead;
+        document.getElementById('guided_tours_title').innerHTML = data[language].guided_tours_title;
+        document.getElementById('guided_tours_description').innerHTML = data[language].guided_tours_description;
+        document.getElementById('detailed_explanations_title').innerHTML = data[language].detailed_explanations_title;
+        document.getElementById('detailed_explanations_description').innerHTML = data[language].detailed_explanations_description;
+        document.getElementById('parisian_experience_title').innerHTML = data[language].parisian_experience_title;
+        document.getElementById('parisian_experience_description').innerHTML = data[language].parisian_experience_description;
+        document.querySelectorAll('.link-with-icon').forEach(link => {
+          link.innerHTML = data[language].learn_more + ' <i class="icon-chevron-right"></i>';
+        });
+        document.getElementById('unforgettable_destinations_heading').innerText = data[language].unforgettable_destinations_heading;
+        document.getElementById('unforgettable_destinations_lead').innerText = data[language].unforgettable_destinations_lead;
+        document.getElementById('visit_eiffel_tower_main').innerHTML = data[language].visit_eiffel_tower_main;
+        document.getElementById('eiffel_description_main').innerHTML = data[language].eiffel_description_main;
+        document.getElementById('visit_lachaise_main').innerHTML = data[language].visit_lachaise_main;
+        document.getElementById('lachaise_description_main').innerHTML = data[language].lachaise_description_main;
+        document.getElementById('visit_montmartre_main').innerHTML = data[language].visit_montmartre_main;
+        document.getElementById('montmartre_description_main').innerHTML = data[language].montmartre_description_main;
+        document.getElementById('visit_notre_dame_main').innerHTML = data[language].visit_notre_dame_main;
+        document.getElementById('notre_dame_description_main').innerHTML = data[language].notre_dame_description_main;
+        document.getElementById('visit_latin_quarter_main').innerHTML = data[language].visit_latin_quarter_main;
+        document.getElementById('latin_quarter_description_main').innerHTML = data[language].latin_quarter_description_main;
+        document.getElementById('home_link').innerHTML = data[language].home_link;
+document.getElementById('home_link').href = data[language].home_link_href;
+document.getElementById('about_link').innerHTML = data[language].about_link;
+document.getElementById('about_link').href = data[language].about_link_href;
+document.getElementById('rooms_link').innerHTML = data[language].rooms_link;
+document.getElementById('rooms_link').href = data[language].rooms_link_href;
+document.getElementById('reservation_link').innerHTML = data[language].reservation_link;
+document.getElementById('reservation_link').href = data[language].reservation_link_href;
+document.getElementById('blog_link').innerHTML = data[language].blog_link;
+document.getElementById('blog_link').href = data[language].blog_link_href;
+document.getElementById('contact_link').innerHTML = data[language].contact_link;
+document.getElementById('contact_link').href = data[language].contact_link_href;
+
+document.getElementById('join_us_link').innerHTML = data[language].join_us_link;
+
+
+
+        })
+        .catch(error => console.error('Error loading translations:', error));
+    }
+  
+    function toggleLanguage(language) {
+    // Basculez entre les langues
+    switch (language) {
+        case 'fr':
+            currentLanguage = 'fr';
+            break;
+        case 'en':
+            currentLanguage = 'en';
+            break;
+        case 'es':
+            currentLanguage = 'es';
+            break;
+        default:
+            currentLanguage = 'en'; // La langue par défaut
+    }
+    loadTranslations(currentLanguage);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    loadTranslations(currentLanguage); // Chargez les traductions dans la langue actuelle
+    document.getElementById('toggleLanguage').addEventListener('click', toggleLanguage); // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de commutation de langue
+});
+  </script>
+  
+  
+
+  
+  </body>
+</html>

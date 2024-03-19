@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonbon Tours</title>
+    <meta name="description" content="Bonbon Tours">
+    <meta name="keywords" content="bonbon tours, toursbonbon, bonbontours, bonbon-tours">
+    <link rel="shortcut icon" type="image/x-icon" href="img/bonbon_tours-removebg-preview.png" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- START: header -->
+
+  <header role="banner" class="probootstrap-header" id="header">
+    <div class="row">
+      <a href="index.html" class="probootstrap-logo visible-xs"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="70px" alt="logo bonbon tours"></a>
+
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" id="burgerMenu"><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+        
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li class="hidden-xs probootstrap-logo-center"><a href="index" id="logoCenter_link"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="98px" alt="logo bonbon tours"></a></li>
+            <li ><a href="index" id="home_link">Home</a></li>
+            <li ><a href="about" id="about_link">About</a></li>
+            <li><a href="FAQ" id="rooms_link">Our FAQ</a></li>
+           
+            <li><a href="terms-and-conditions" id="reservation_link">Reservation</a></li>
+            <li><a href="privacy-policy" id="blog_link">Blog</a></li>
+            <li ><a href="work-with-us" id="join_us_link">Join us</a></li>
+            <li class="active"><a href="contact" id="contact_link">Contact</a></li>
+            <button id="fr_flag" class="flag-button" onclick="toggleLanguage('fr')">
+              <img src="img/france.png" width="25px" alt="Français" class="flag-icon-img">
+          </button>
+          <button id="es_flag" class="flag-button" onclick="toggleLanguage('es')">
+              <img src="img/espagne.png" width="25px" alt="Espagnol" class="flag-icon-img">
+          </button>
+          <button id="en_flag" class="flag-button" onclick="toggleLanguage('en')">
+              <img src="img/anglais.png" width="25px" alt="Anglais" class="flag-icon-img">
+          </button>
+          
+            
+        </ul>
+        
+          <div class="extra-text visible-xs">
+            <a href="#" class="probootstrap-burger-menu" id="extraBurgerMenu"><i>Menu</i></a>
+            <h5 id="connectWithUs">Connect With Us</h5>
+            <ul class="social-buttons">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook2"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</header>
+  <!-- END: header -->
+
+  <section class="probootstrap-slider flexslider probootstrap-inner">
+    <ul class="slides">
+       <li style="background-image: url(img/bridge.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate">Contact</h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap">Have any questions about our tours and what they offer? Can’t find a day that works for you? We are happy to help! Please use out 24/7 chat at the bottom of the screen to text us.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+  
+  <section class="ftco-section">
+	<div class="container">
+		<div class="row justify-content-center">
+			<div class="col-md-10">
+				<div class="wrapper">
+					<div class="row no-gutters">
+						<div class="col-md-6">
+							<div class="contact-wrap w-100 p-lg-5 p-4">
+								<h3 class="mb-4">Votre demande </h3>
+								<div id="form-message-warning" class="mb-4"></div> 
+								<div id="form-message-success" class="mb-4">
+						
+								</div>
+                 <form method="POST" action="sendEmail.php" id="contactForm" name="contactForm" class="contactForm" onsubmit="return submitForm()">
+
+                  <div class="row">
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="firstname" id="firstname" placeholder="Votre prénom..." required>
+                          </div>
+                      </div>
+                      <div class="col-md-6">
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="lastname" id="lastname" placeholder="Votre nom..." required>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <input type="email" class="form-control" name="email" id="email" placeholder="Votre email..." required>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Votre demande..." required>
+                          </div>
+                      </div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <textarea name="message" class="form-control" id="message" cols="30" rows="6" placeholder="Message" required></textarea>
+                          </div>
+                      </div>
+                      <div id="form-response" class="mb-4"></div>
+                      <div class="col-md-12">
+                          <div class="form-group">
+                              <input type="submit" value="Send the message" class="btn btn-primary">
+                              <div class="submitting"></div>
+                          </div>
+                      </div>
+                  </div>
+              </form>
+                
+							</div>
+						</div>
+						<div class="col-md-6 d-flex align-items-stretch">
+							<div class="info-wrap w-100 p-lg-5 p-4 img">
+								<h3>Contact us</h3>
+								<p class="mb-4">Have any questions about our tours and what they offer? Can’t find a day that works for you? We are happy to help! Please use out 24/7 chat at the bottom of the screen to text us.</p>
+								<div class="dbox w-100 d-flex align-items-start">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<span class="fa fa-map-marker"></span>
+									</div>
+									<div class="text pl-3">
+										<p><span>Ville:</span> Paris</p>
+									</div>
+								</div>
+								<div class="dbox w-100 d-flex align-items-center">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<span class="fa fa-phone"></span>
+									</div>
+									<div class="text pl-3">
+										<p><span>Tel:</span> +33 7 67 74 27 75</a></p>
+                    <p><span>Tel:</span> +33 6 31 14 28 41</a></p>
+									</div>
+								</div>
+								<div class="dbox w-100 d-flex align-items-center">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<span class="fa fa-paper-plane"></span>
+									</div>
+									<div class="text pl-3">
+										<p><span>Email:</span> <a href="mailto:toursbonbon@gmail.com">toursbonbon@gmail.com</a></p>
+									</div>
+								</div>
+								<div class="dbox w-100 d-flex align-items-center">
+									<div class="icon d-flex align-items-center justify-content-center">
+										<span class="fa fa-globe"></span>
+									</div>
+									<div class="text pl-3">
+										<p><span>Notre site</span> <a href="../index.php">www.bonbon-tours.fr</a></p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+<section class="probootstrap-half">
+  <div class="image" style="background-image: url(img/beau.jpg);"></div>
+  <div class="text">
+    <div class="probootstrap-animate fadeInUp probootstrap-animated">
+      <h2 class="mt0">Costumer Reviews </h2>
+      <p><img src="img/curve_white.svg" class="seperator" alt="image bonbon tour"></p>
+      <div class="row">
+        <div class="col-md-6">
+          <p>At Bonbon Tours, we cherish the invaluable feedback from our customers. Your reviews are not just comments; they are the heartbeat of our service. We take immense pride in being guided by your experiences, ensuring each tour is crafted to exceed expectations.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Your satisfaction is our priority, and your reviews are the compass that directs us on the path to excellence. Thank you for making Bonbon Tours a journey shaped by your stories.</p>
+        </div>
+      </div>
+      <!-- <p><a href="about" class="link-with-icon white"> <i class=" icon-chevron-right"></i></a></p> -->
+    </div>
+  </div>
+</section>
+
+
+<!-- START: footer -->
+<footer role="contentinfo" class="probootstrap-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="probootstrap-footer-widget">
+          <p class="mt40"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="110px" alt="image bonbon tour by ">           </p>
+         <ul>
+              <li>24-hour advance refund policy</li>
+              <li>Confirmation before every tour</li>
+              <li>Customer Support 24/7</li>
+            </ul>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="probootstrap-footer-widget">
+          <h3>Need Help ? </h3>
+          <ul class="probootstrap-blog-list">
+            <li>
+              <a href="about" id="about_link">
+                <figure class="probootstrap-image"><img src="img/parispan.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="about_title">Discover Bonbon Tours</h4>
+                  <p id="about_description">Explore the wonders of Bonbon Tours</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="FAQ" id="faq_link">
+                <figure class="probootstrap-image"><img src="img/faq.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="faq_title">Find Answers in FAQ</h4>
+                  <p id="faq_description">Explore frequently asked questions</p>
+                </div>
+              </a>
+              
+            </li>
+            <li>
+              <a href="terms-and-conditions" id="terms_conditions_link">
+                <figure class="probootstrap-image"><img src="img/conditions.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="terms_conditions_title">Understand Our Terms</h4>
+                  <p id="terms_conditions_description">Read our terms and conditions</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="privacy-policy" id="privacy_policy_link">
+                <figure class="probootstrap-image"><img src="img/privacy-policy.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="privacy_policy_title">Protect Your Privacy</h4>
+                  <p id="privacy_policy_description">Learn about our privacy policy</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="probootstrap-footer-widget">
+          <h3>Contact Us</h3>
+          <ul class="probootstrap-contact-info">
+            <li><i class="icon-location2"></i> <span>Paris</span></li>
+            <li><i class="icon-mail"></i><span>toursbonbon@gmail.com</span></li>
+            <li><i class="icon-phone2"></i><span>+33 7 48 54 52 54</span></li>
+          </ul>
+
+          <div>
+            <h4>You can also find us on Tripadvisor!</h4>
+            <a href="https://www.tripadvisor.fr/Attraction_Review-g187147-d26360710-Reviews-Bonbon_Tours-Paris_Ile_de_France.html" target="_blank"><img src="img/tripadvisor.png" width="50px" alt="Tripadvisor" class="img-responsive"></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row mt40">
+      <div class="col-md-12 text-center">
+        <ul class="probootstrap-footer-social">
+          <li><a href=""><i class="icon-twitter"></i></a></li>
+          <li><a href=""><i class="icon-facebook"></i></a></li>
+          <li><a href=""><i class="icon-instagram2"></i></a></li>
+        </ul>
+        <p>
+          <small>&copy; 2024 <a href="https:///" target="_blank">Bonbon Tours</a>. All Rights Reserved. <br> Designed &amp; Developed by Sohane</small>
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END: footer -->
+  
+ 
+  
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    function validateForm() {
+        var firstname = document.getElementById('firstname').value;
+        var lastname = document.getElementById('lastname').value;
+        var email = document.getElementById('email').value;
+        var subject = document.getElementById('subject').value;
+        var message = document.getElementById('message').value;
+    
+        // Vérifiez que tous les champs sont remplis
+        if (firstname === '' || lastname === '' || email === '' || subject === '' || message === '') {
+            alert('Veuillez remplir tous les champs du formulaire.');
+            return false;
+        }
+    
+        // Si tout est correct, le formulaire peut être soumis
+        return true;
+    }
+    </script>
+
+  
+
+
+  <script>
+    function submitForm() {
+        var form = document.getElementById('contactForm');
+        var formData = new FormData(form);
+    
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', form.action, true);
+    
+        xhr.onload = function() {
+            if (xhr.status === 200) {
+                var response = JSON.parse(xhr.responseText);
+                displayMessage(response.message);
+                form.reset();
+            } else {
+                displayMessage('Une erreur s\'est produite. Veuillez réessayer.');
+            }
+        };
+    
+        xhr.onerror = function() {
+            displayMessage('Une erreur s\'est produite. Veuillez réessayer.');
+        };
+    
+        xhr.send(formData);
+    
+        return false; // Empêche le formulaire d'être soumis normalement
+    }
+    
+    function displayMessage(message) {
+        var formResponse = document.getElementById('form-response');
+        formResponse.innerHTML = message;
+    }
+    </script>
+
+
+<script>
+  let currentLanguage = 'en'; // Définissez la langue actuelle, par défaut en français
+
+  function loadTranslations(language) {
+    fetch('translations.json')
+      .then(response => response.json())
+      .then(data => {
+  
+         document.getElementById('home_link').innerHTML = data[language].home_link;
+          document.getElementById('home_link').href = data[language].home_link_href;
+          document.getElementById('about_link').innerHTML = data[language].about_link;
+          document.getElementById('about_link').href = data[language].about_link_href;
+          document.getElementById('rooms_link').innerHTML = data[language].rooms_link;
+          document.getElementById('rooms_link').href = data[language].rooms_link_href;
+          document.getElementById('reservation_link').innerHTML = data[language].reservation_link;
+          document.getElementById('reservation_link').href = data[language].reservation_link_href;
+          document.getElementById('blog_link').innerHTML = data[language].blog_link;
+          document.getElementById('blog_link').href = data[language].blog_link_href;
+          document.getElementById('contact_link').innerHTML = data[language].contact_link;
+          document.getElementById('contact_link').href = data[language].contact_link_href;
+          document.getElementById('join_us_link').innerHTML = data[language].join_us_link;
+
+
+
+      })
+      .catch(error => console.error('Error loading translations:', error));
+  }
+
+  function toggleLanguage(language) {
+  // Basculez entre les langues
+  switch (language) {
+      case 'fr':
+          currentLanguage = 'fr';
+          break;
+      case 'en':
+          currentLanguage = 'en';
+          break;
+      case 'es':
+          currentLanguage = 'es';
+          break;
+      default:
+          currentLanguage = 'en'; // La langue par défaut
+  }
+  loadTranslations(currentLanguage);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  loadTranslations(currentLanguage); // Chargez les traductions dans la langue actuelle
+  document.getElementById('toggleLanguage').addEventListener('click', toggleLanguage); // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de commutation de langue
+});
+</script>
+
+  </body>
+</html>

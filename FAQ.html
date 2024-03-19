@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bonbon Tours</title>
+    <meta name="description" content="Bonbon Tours">
+    <meta name="keywords" content="bonbon tours, toursbonbon, bonbontours, bonbon-tours">
+    <link rel="stylesheet" href="https://unpkg.com/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="img/bonbon_tours-removebg-preview.png" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:300,400,700|Rubik:300,400,700,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles-merged.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!--[if lt IE 9]>
+      <script src="js/vendor/html5shiv.min.js"></script>
+      <script src="js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+  <!-- START: header -->
+
+  <header role="banner" class="probootstrap-header" id="header">
+    <div class="row">
+      <a href="index.html" class="probootstrap-logo visible-xs"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="70px" alt="logo bonbon tours"></a>
+
+        
+        <a href="#" class="probootstrap-burger-menu visible-xs" id="burgerMenu"><i>Menu</i></a>
+        <div class="mobile-menu-overlay"></div>
+        
+        <nav role="navigation" class="probootstrap-nav hidden-xs">
+          <ul class="probootstrap-main-nav">
+            <li class="hidden-xs probootstrap-logo-center"><a href="index" id="logoCenter_link"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="98px" alt="logo bonbon tours"></a></li>
+            <li ><a href="index" id="home_link">Home</a></li>
+            <li ><a href="about" id="about_link">About</a></li>
+            <li  class="active"  ><a href="FAQ" id="rooms_link">Our FAQ</a></li>
+           
+            <li><a href="terms-and-conditions" id="reservation_link">Reservation</a></li>
+            <li ><a href="privacy-policy" id="blog_link">Blog</a></li>
+            <li ><a href="work-with-us" id="join_us_link">Join us</a></li>
+            <li ><a href="contact" id="contact_link">Contact</a></li>
+            <button id="fr_flag" class="flag-button" onclick="toggleLanguage('fr')">
+              <img src="img/france.png" width="25px" alt="Français" class="flag-icon-img">
+          </button>
+          <button id="es_flag" class="flag-button" onclick="toggleLanguage('es')">
+              <img src="img/espagne.png" width="25px" alt="Espagnol" class="flag-icon-img">
+          </button>
+          <button id="en_flag" class="flag-button" onclick="toggleLanguage('en')">
+              <img src="img/anglais.png" width="25px" alt="Anglais" class="flag-icon-img">
+          </button>
+          
+            
+        </ul>
+        
+          <div class="extra-text visible-xs">
+            <a href="#" class="probootstrap-burger-menu" id="extraBurgerMenu"><i>Menu</i></a>
+            <h5 id="connectWithUs">Connect With Us</h5>
+            <ul class="social-buttons">
+              <li><a href="#"><i class="icon-twitter"></i></a></li>
+              <li><a href="#"><i class="icon-facebook2"></i></a></li>
+              <li><a href="#"><i class="icon-instagram2"></i></a></li>
+            </ul>
+          </div>
+        </nav>
+    </div>
+</header>
+  <!-- END: header -->
+
+  <section class="probootstrap-slider flexslider probootstrap-inner">
+    <ul class="slides">
+       <li style="background-image: url(img/arc-de-triomphe-5432392_1920.jpg);" class="overlay">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                <div class="probootstrap-slider-text text-center">
+                  <p><img src="img/curve_white.svg" class="seperator probootstrap-animate" alt="image bonbon tour"></p>
+                  <h1 class="probootstrap-heading probootstrap-animate">FAQ</h1>
+                  <div class="probootstrap-animate probootstrap-sub-wrap">Here you will find all the answers to your questions. If no answer is provided for your question, please send us an email.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+    </ul>
+  </section>
+
+
+
+
+  <!-- <div class="container mt-5 mb-5">
+    <h1 class="text-center mb-4">Frequently Asked Questions</h1>
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              Question 1
+            </button>
+          </h5>
+        </div>
+
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body">
+            Answer to question 1.
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Question 2
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body">
+            Answer to question 2.
+          </div>
+        </div>
+      </div>
+      
+    
+    </div>
+</div> -->
+
+  
+<!-- TESTTESTTEST -->
+
+<div class="faq_area section_padding_130  mb-5" id="faq">
+  <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-12 col-sm-8 col-lg-6">
+              <!-- Section Heading-->
+              <div class="section_heading text-center wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                  <h3><span>Frequently </span> Asked Questions</h3>
+                  <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                  <div class="line"></div>
+              </div>
+          </div>
+      </div>
+      <div class="row justify-content-center">
+          <!-- FAQ Area-->
+          <div class="col-12 col-sm-10 col-lg-8">
+              <div class="accordion faq-accordian" id="faqAccordion">
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.2s" style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
+                      <div class="card-header" id="headingOne">
+                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">How can I install this app?<span class="lni-chevron-up"></span></h6>
+                      </div>
+                      <div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#faqAccordion">
+                          <div class="card-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
+                              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.3s" style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                      <div class="card-header" id="headingTwo">
+                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">The apps isn't installing?<span class="lni-chevron-up"></span></h6>
+                      </div>
+                      <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#faqAccordion">
+                          <div class="card-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
+                              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="card border-0 wow fadeInUp" data-wow-delay="0.4s" style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                      <div class="card-header" id="headingThree">
+                          <h6 class="mb-0 collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">Contact form isn't working?<span class="lni-chevron-up"></span></h6>
+                      </div>
+                      <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#faqAccordion">
+                          <div class="card-body">
+                              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto quidem facere deserunt sint animi sapiente vitae suscipit.</p>
+                              <p>Appland is completely creative, lightweight, clean &amp; super responsive app landing page.</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!-- Support Button-->
+              <div class="support-button text-center d-flex align-items-center justify-content-center mt-4 wow fadeInUp" data-wow-delay="0.5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                  <i class="lni-emoji-sad"></i>
+                  <p class="mb-0 px-2">Can't find your answers?</p>
+                  <a href="contact"> Contact us</a>
+              </div>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+  
+
+  
+  
+  <!-- <section class="probootstrap-section">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="probootstrap-room">
+            <a href="#"><img src="img/img_4.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+            <div class="text">
+              <h3>Classic Room</h3>
+              <p>Starting from <strong>$29.00/Night</strong></p>
+              <div class="post-meta mb30">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="probootstrap-room">
+            <a href="#"><img src="img/img_1.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+            <div class="text">
+              <h3>Grand Deluxe Room</h3>
+              <p>Starting from <strong>$29.00/Night</strong></p>
+              <div class="post-meta mb30">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="probootstrap-room">
+            <a href="#"><img src="img/img_2.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+            <div class="text">
+              <h3>Ultra Superior Room</h3>
+              <p>Starting from <strong>$29.00/Night</strong></p>
+              <div class="post-meta mb30">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="probootstrap-room">
+            <a href="#"><img src="img/img_5.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+            <div class="text">
+              <h3>Grand Deluxe Room</h3>
+              <p>Starting from <strong>$29.00/Night</strong></p>
+              <div class="post-meta mb30">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="probootstrap-room">
+            <a href="#"><img src="img/img_6.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+            <div class="text">
+              <h3>Ultra Superior Room</h3>
+              <p>Starting from <strong>$29.00/Night</strong></p>
+              <div class="post-meta mb30">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <div class="probootstrap-room">
+            <a href="#"><img src="img/img_7.jpg" alt="logo bonbon tours" class="img-responsive"></a>
+            <div class="text">
+              <h3>Presidential Room</h3>
+              <p>Starting from <strong>$29.00/Night</strong></p>
+              <div class="post-meta mb30">
+                <ul>
+                  <li><span class="review-rate">4.7</span> <i class="icon-star"></i> 252 Reviews</li>
+                  <li><i class="icon-user2"></i> 3 Guests</li>
+                </ul>
+              </div>
+              <p><a href="#" class="btn btn-primary" role="button">Reserve now for $29.00</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="clearfix visible-sm-block"></div>
+
+      </div>
+
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <h2>Why Choose Us?</h2>
+          <p class="mb50"><img src="img/curve.svg" class="svg" alt="image bonbon tour"></p>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon left-icon-sm probootstrap-animate">
+            <div class="icon">
+              <i class="icon-check"></i>
+            </div>
+            <div class="text">
+              <h3>1+ Million Hotel FAQ</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon left-icon-sm probootstrap-animate">
+            <div class="icon">
+              <i class="icon-check"></i>
+            </div>
+            <div class="text">
+              <h3>Food &amp; Drinks</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon left-icon-sm probootstrap-animate">
+            <div class="icon">
+              <i class="icon-check"></i>
+            </div>
+            <div class="text">
+              <h3>Airport Taxi</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="probootstrap-section probootstrap-section-dark">
+    <div class="container">
+      <div class="row mb30">
+        <div class="col-md-8 col-md-offset-2 probootstrap-section-heading text-center">
+          <h2>Explore our Services</h2>
+          <p class="lead">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+          <p><img src="img/curve.svg" class="svg" alt="image bonbon tour"></p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/flaticon/svg/001-building.svg" class="svg" alt="image bonbon tour by ">
+            </div>
+            <div class="text">
+              <h3>1+ Million Hotel FAQ</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/flaticon/svg/003-restaurant.svg" class="svg" alt="image bonbon tour by ">
+            </div>
+            <div class="text">
+              <h3>Food &amp; Drinks</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="service left-icon probootstrap-animate">
+            <div class="icon">
+              <img src="img/flaticon/svg/004-parking.svg" class="svg" alt="image bonbon tour by ">
+            </div>
+            <div class="text">
+              <h3>Airport Taxi</h3>
+              <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+              <p><a href="#" class="link-with-icon">Learn More <i class=" icon-chevron-right"></i></a></p>
+            </div>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+<!-- START: footer -->
+
+<section class="probootstrap-half">
+  <div class="image" style="background-image: url(img/beau.jpg);"></div>
+  <div class="text">
+    <div class="probootstrap-animate fadeInUp probootstrap-animated">
+      <h2 class="mt0">Costumer Reviews </h2>
+      <p><img src="img/curve_white.svg" class="seperator" alt="image bonbon tour"></p>
+      <div class="row">
+        <div class="col-md-6">
+          <p>At Bonbon Tours, we cherish the invaluable feedback from our customers. Your reviews are not just comments; they are the heartbeat of our service. We take immense pride in being guided by your experiences, ensuring each tour is crafted to exceed expectations.</p>
+        </div>
+        <div class="col-md-6">
+          <p>Your satisfaction is our priority, and your reviews are the compass that directs us on the path to excellence. Thank you for making Bonbon Tours a journey shaped by your stories.</p>
+        </div>
+      </div>
+      <!-- <p><a href="about" class="link-with-icon white"> <i class=" icon-chevron-right"></i></a></p> -->
+    </div>
+  </div>
+</section>
+
+
+<footer role="contentinfo" class="probootstrap-footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="probootstrap-footer-widget">
+          <p class="mt40"><img src="img/bonbon_tours-removebg-preview.png" class="hires" width="110px" alt="image bonbon tour by ">           </p>
+         <ul>
+              <li>24-hour advance refund policy</li>
+              <li>Confirmation before every tour</li>
+              <li>Customer Support 24/7</li>
+            </ul>
+          
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="probootstrap-footer-widget">
+          <h3>Need Help ? </h3>
+          <ul class="probootstrap-blog-list">
+            <li>
+              <a href="about" id="about_link">
+                <figure class="probootstrap-image"><img src="img/parispan.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="about_title">Discover Bonbon Tours</h4>
+                  <p id="about_description">Explore the wonders of Bonbon Tours</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="FAQ" id="faq_link">
+                <figure class="probootstrap-image"><img src="img/faq.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="faq_title">Find Answers in FAQ</h4>
+                  <p id="faq_description">Explore frequently asked questions</p>
+                </div>
+              </a>
+              
+            </li>
+            <li>
+              <a href="terms-and-conditions" id="terms_conditions_link">
+                <figure class="probootstrap-image"><img src="img/conditions.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="terms_conditions_title">Understand Our Terms</h4>
+                  <p id="terms_conditions_description">Read our terms and conditions</p>
+                </div>
+              </a>
+            </li>
+            <li>
+              <a href="privacy-policy" id="privacy_policy_link">
+                <figure class="probootstrap-image"><img src="img/privacy-policy.png" width="55px" alt="logo bonbon tours" class="img-responsive"></figure>
+                <div class="probootstrap-text">
+                  <h4 id="privacy_policy_title">Protect Your Privacy</h4>
+                  <p id="privacy_policy_description">Learn about our privacy policy</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="probootstrap-footer-widget">
+          <h3>Contact Us</h3>
+          <ul class="probootstrap-contact-info">
+            <li><i class="icon-location2"></i> <span>Paris</span></li>
+            <li><i class="icon-mail"></i><span>toursbonbon@gmail.com</span></li>
+            <li><i class="icon-phone2"></i><span>+33 7 48 54 52 54</span></li>
+          </ul>
+
+          <div>
+            <h4>You can also find us on Tripadvisor!</h4>
+            <a href="https://www.tripadvisor.fr/Attraction_Review-g187147-d26360710-Reviews-Bonbon_Tours-Paris_Ile_de_France.html"  target="_blank"><img src="img/tripadvisor.png" width="50px" alt="Tripadvisor" class="img-responsive"></a>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <div class="row mt40">
+      <div class="col-md-12 text-center">
+        <ul class="probootstrap-footer-social">
+          <li><a href=""><i class="icon-twitter"></i></a></li>
+          <li><a href=""><i class="icon-facebook"></i></a></li>
+          <li><a href=""><i class="icon-instagram2"></i></a></li>
+        </ul>
+        <p>
+          <small>&copy; 2024 <a href="https:///" target="_blank">Bonbon Tours</a>. All Rights Reserved. <br> Designed &amp; Developed by Sohane</small>
+        </p>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- END: footer -->
+
+  <script src="js/scripts.min.js"></script>
+  <script src="js/main.min.js"></script>
+  <script src="js/custom.js"></script>
+
+  <script>
+    let currentLanguage = 'en'; // Définissez la langue actuelle, par défaut en français
+  
+    function loadTranslations(language) {
+      fetch('translations.json')
+        .then(response => response.json())
+        .then(data => {
+    
+          document.getElementById('home_link').innerHTML = data[language].home_link;
+          document.getElementById('home_link').href = data[language].home_link_href;
+            document.getElementById('about_link').innerHTML = data[language].about_link;
+            document.getElementById('about_link').href = data[language].about_link_href;
+            document.getElementById('rooms_link').innerHTML = data[language].rooms_link;
+            document.getElementById('rooms_link').href = data[language].rooms_link_href;
+            document.getElementById('reservation_link').innerHTML = data[language].reservation_link;
+            document.getElementById('reservation_link').href = data[language].reservation_link_href;
+            document.getElementById('blog_link').innerHTML = data[language].blog_link;
+            document.getElementById('blog_link').href = data[language].blog_link_href;
+            document.getElementById('contact_link').innerHTML = data[language].contact_link;
+            document.getElementById('contact_link').href = data[language].contact_link_href;
+            document.getElementById('join_us_link').innerHTML = data[language].join_us_link;
+
+            
+
+            document.getElementById("heading_term").innerHTML = data[language].heading_term;
+            document.getElementById("content_term").innerHTML = data[language].content_term;
+
+
+  
+  
+  
+        })
+        .catch(error => console.error('Error loading translations:', error));
+    }
+  
+    function toggleLanguage(language) {
+    // Basculez entre les langues
+    switch (language) {
+        case 'fr':
+            currentLanguage = 'fr';
+            break;
+        case 'en':
+            currentLanguage = 'en';
+            break;
+        case 'es':
+            currentLanguage = 'es';
+            break;
+        default:
+            currentLanguage = 'en'; // La langue par défaut
+    }
+    loadTranslations(currentLanguage);
+  }
+  
+  document.addEventListener('DOMContentLoaded', function() {
+    loadTranslations(currentLanguage); // Chargez les traductions dans la langue actuelle
+    document.getElementById('toggleLanguage').addEventListener('click', toggleLanguage); // Ajoutez un gestionnaire d'événements pour le clic sur le bouton de commutation de langue
+  });
+  </script>
+
+
+
+
+
+
+
+  </body>
+</html>
